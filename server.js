@@ -1,20 +1,24 @@
-var express           = require('express'),
-    app               = express(),
-    bodyParser        = require('body-parser'),
-   mongoose          = require('mongoose'),
-    meetupsController = require('./server/controllers/meetups-controller');
+var express = require('express');
+
+
+var app = express();
+  /*  bodyParser        = require('body-parser');
+   //mongoose          = require('mongoose'),
+//    meetupsController = require('./server/controllers/meetups-controller');
 
 //mongoose.connect('mongodb://localhost:27017/timewaste')
 
 app.use(bodyParser());
 
 var port = process.env.PORT || 8080;
-
+*/
 // routes will go here
 
 // start the server
-app.listen(port);
-console.log('Server started! At http://localhost:' + port);
+app.listen('3000',function(){
+	console.log("this is working")
+})
+
 //newer version
 //app.use(bodyParser.urlencoded({ extended: false }))
 //app.use(bodyParser.json())
